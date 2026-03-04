@@ -28,7 +28,7 @@ def send_reliable(sock, addr, pkt_type, seq_num, data, loss, dup, reorder, rtt_m
         # --- ขากลับ: รอ ACK ---
         try:
             # ตั้ง timeout เผื่อ RTT (ขั้นต่ำ 1 วินาทีเพื่อความเสถียร)
-            sock.settimeout(max(1.0, rtt_sec * 2))
+            sock.settimeout(rtt_sec + 0.05)
             
             while True: # Loop กวาด ACK เก่า (Drain Buffer)
                 ack_pkt, _ = sock.recvfrom(1024)
