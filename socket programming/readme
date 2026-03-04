@@ -1,0 +1,11 @@
+การใช้งาน
+1.เริ่มรันตัวของ urft_server.py
+2.กรอก server to client loss packet link
+3.กรอก server to client duplication packet link
+4.เริ่มรันตัวของ urft_client.py
+5.กรอกชื่อไฟล์ที่จะใช้ทดสอบ
+6.กรอก rtt ที่ต้องการ
+7.กรอก client to server packet loss ที่ต้องการ
+8.กรอก client to server packet duplication ที่ต้องการ
+9.กรอก client to server re-ordering ที่ต้องการ
+10.รอจนกว่าจะได้ผลลัพธ์
